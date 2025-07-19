@@ -1,0 +1,6 @@
+.chat-screen-container {
+    display: flex;
+    flex-direction: column;
+    background-color: burlywood;
+    width: 100%;
+}
