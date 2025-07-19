@@ -11,7 +11,7 @@ const App = () => {
   return (
     <div style={{ display: 'flex' }}>
       < Sidebar />
-      <div>
+      <div className='hola'>
         < SearchBar />
         < ContactScreen to='/contact/:contact_id/messages' />
       </div>
