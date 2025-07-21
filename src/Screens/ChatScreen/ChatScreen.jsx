@@ -1,7 +1,7 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { useParams } from 'react-router'
 import MessagesList from '../../Components/MessagesList/MessagesList'
-import { getContactById } from '../../services/contactService'
+import { getContactById, getContactList } from '../../services/contactService'
 import { NewMessageForm } from '../../Components/NewMessageForm/NewMessageForm'
 import './ChatScreen.css'
 
@@ -28,7 +28,11 @@ const ChatScreen = () => {
 	const contact_selected = getContactById(contact_id)
 
 	/* Paso 3: */
-    const [messages, setMessages] = useState(contact_selected.messages)
+    const [messages, setMessages] = useState([])
+
+	useEffect(() => {
+		setMessages(contact_selected.messages)
+	},[contact_selected])
 
 	const deleteMessageById = (message_id) => {
 		const new_message_list = []
@@ -59,10 +63,11 @@ const ChatScreen = () => {
 	const deleteAllMessages = () => {
 		setMessages([])
 	}
-
 	
     return (
         <div className='chat-screen-container'>
+			<div className='contact-info-container'>
+			</div>
 			<h1>Mensajes:</h1>
 			{
 				messages.length > 0

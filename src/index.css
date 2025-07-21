@@ -13,10 +13,10 @@
     background-color: transparent;
     border-radius: 20px;
     padding: 6px 12px;
-    border: 1px solid #cccccc;
+    border: 1px solid #aaaaaa;
     cursor: pointer;
     font-size: 14px;
-    color: #6f6f6f;
+    color: #00000099;
     font-weight: 100;
 }
 .primary-button:hover{
@@ -25,4 +25,14 @@
 }
 .primary-button-selected{
     background-color: #d9fdd3 ;
+}
+h2{
+    font-size: 16px;
+    color: #0a0a0a;
+    font-weight: 500;   
+}
+span{
+    font-size: 14px;
+    color: #00000099;
+    font-weight: 200;
 }
