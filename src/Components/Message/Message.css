@@ -1,4 +1,10 @@
-.mensaje {
+.messages-container {
+    display: flex;
+    flex-direction: column;
+    background-image: '/images/whatsapp-doodle-pattern.jpg';
+}
+
+.message {
     max-width: 60%;
     padding: 10px;
     border-radius: 10px;
@@ -9,11 +15,11 @@
     word-break: break-word;
 }
 
-.mensaje p {
+.message p {
     margin: 0;
 }
 
-.mensaje .hora {
+.message .hora {
     font-size: 10px;
     color: gray;
     position: absolute;
@@ -21,15 +27,13 @@
     right: 10px;
 }
 
-/* YO -> derecha */
-.mensaje-yo {
+.message-me {
     align-self: flex-end;
-    background-color: #dcf8c6;
+    background-color: #571a74;
 }
 
-/* OTRO -> izquierda */
-.mensaje-otro {
+.message-other {
     align-self: flex-start;
-    background-color: #fff;
+    background-color: #bb2525;
     border: 1px solid #ccc;
 }

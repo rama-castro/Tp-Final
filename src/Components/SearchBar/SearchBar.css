@@ -1,20 +1,23 @@
-.search-bar_top{
+.search-bar_top {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 20px;}
-    
-.whatsapp-logotype{
+    padding: 20px 20px;
+}
+
+.whatsapp-logotype {
     height: 20px;
 }
-    .search-bar_top-icons{
+
+.search-bar_top-icons {
     display: flex;
     flex-direction: row;
     gap: 15px;
     width: fit-content;
 }
-.search-bar_box{
+
+.search-bar_box {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -24,20 +27,22 @@
     margin: 0px 10px 10px;
     background-color: #f6f5f4;
     height: 40px;
-    gap: 5px;}
+    gap: 5px;
+}
 
-.search-input{
+.search-input {
     background-color: transparent;
     border: none;
-    width:100%;
+    width: 100%;
     margin-left: 15px;
     outline: none;
 }
-.search-bar_bottom{
+
+.search-bar_bottom {
     display: flex;
     flex-direction: row;
-    justify-content:flex-start;
+    justify-content: flex-start;
     align-items: center;
-padding: 0px 20px 10px;
-gap: 5px;
+    padding: 0px 20px 10px;
+    gap: 5px;
 }

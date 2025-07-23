@@ -1,17 +1,18 @@
 import React from 'react'
 import logo from '../../assets/whatsapp-logotype.svg'
 import './SearchBar.css'
+import { Link } from 'react-router'
 
 const SearchBar = () => 
 
     {
-        const handleClick = () => {
-            window.location.href = '/';
-        };
+    
         return (
             <div>
                 <div className='search-bar_top'>
-                    <img className='whatsapp-logotype' src={logo} alt="whatsapp-logotype" onClick={handleClick} />
+                    <Link to="/">
+                    <img className='whatsapp-logotype' src={logo} alt="whatsapp-logotype" />
+                    </Link>
                     <div className='search-bar_top-icons'>
                         <i class="bi bi-chat-left-dots-fill"></i>
                         <i class="bi bi-three-dots-vertical"></i>

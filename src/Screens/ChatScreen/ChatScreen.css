@@ -1,7 +1,7 @@
 .chat-screen-container {
     display: flex;
     flex-direction: column;
-    background-color: transparent;
+    background-image: '/images/whatsapp-doodle-pattern.jpg';
     width: 100%;
 }
 

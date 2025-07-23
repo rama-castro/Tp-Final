@@ -8,6 +8,7 @@ const MessagesList = ({ messages, deleteMessageById }) => {
 		return <span>Aun no tienes mensajes!</span>
 	}
 	
+	
 	const lista_mensajes = messages.map(
 		function (message) {
 			return <Message 
