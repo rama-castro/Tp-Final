@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import './Message.css'
 import { redirect } from 'react-router'
+import ICONS from '../../assets/constants/icons/icons'
 const Message = ({ emisor, hora, id, texto, status, deleteMessageById }) => {
 
 
@@ -18,11 +19,16 @@ const Message = ({ emisor, hora, id, texto, status, deleteMessageById }) => {
 		<div className='messages-container' onContextMenu={handleChangeMessageSelected}>
 			<div className={Message({ emisor })} >
 				<p>{texto}</p>
-				<span>{hora}</span>
+				<div className='last-connection-container'>
+					<span style={{fontSize: '11px'}} >{hora}</span>
+					<ICONS.Doublecheckmark style={{color: '#888', fontSize: '16px'}}/>
+				</div>
+				
+			</div>
+
 				{
 					message_selected && <button onClick={() => { deleteMessageById(id) }}>Eliminar</button>
 				}
-			</div>
 		</div>
 	)
 }

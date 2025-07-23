@@ -12,7 +12,7 @@ const ContactItem = ({ contact }) => {
                     </div>
                     <div className='contact-name-container'>
                         <h2>{contact.name}</h2>
-                        <span> {contact.messages[0].texto}</span>
+                        <span> {contact.messages[contact.messages.length - 1].texto}</span>
                     </div>
                     <span className='contact-last-connection'> {contact.lastConnection}</span>
                 </div>

@@ -4,6 +4,7 @@ import MessagesList from '../../Components/MessagesList/MessagesList'
 import { getContactById } from '../../services/contactService'
 import { NewMessageForm } from '../../Components/NewMessageForm/NewMessageForm'
 import './ChatScreen.css'
+import ICONS from '../../assets/constants/icons/icons'
 
 const ChatScreen = () => {
 	const { contact_id } = useParams()
@@ -48,7 +49,7 @@ const ChatScreen = () => {
 		<div className='chat-screen-container'>
 			<div className='contact-info-container'>
 				<Link to="/">
-					<i className="bi bi-arrow-left-short"></i>
+					<ICONS.Arrowleft/>
 				</Link>
 				<div className='avatar-container'>
 					<img className='avatar' src={contact_selected.avatar} alt={contact_selected.name} />

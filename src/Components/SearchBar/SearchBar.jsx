@@ -1,5 +1,5 @@
 import React from 'react'
-import logo from '../../assets/whatsapp-logotype.svg'
+import logo from '/images/whatsapp-logotype.svg'
 import './SearchBar.css'
 import { Link } from 'react-router'
 
