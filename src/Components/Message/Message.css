@@ -29,11 +29,11 @@
 
 .message-me {
     align-self: flex-end;
-    background-color: #571a74;
+    background-color: #d9fdd3;
 }
 
 .message-other {
     align-self: flex-start;
-    background-color: #bb2525;
+    background-color: #ffffff;
     border: 1px solid #ccc;
 }
