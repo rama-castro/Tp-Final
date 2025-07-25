@@ -10,7 +10,6 @@
     margin-left: 20px;
     margin-right: 20px;
     background-color: white;
-
 }
 
 .message-input-container input {
@@ -19,7 +18,6 @@
     border: none;
     padding: 10px 20px;
     outline: none;
-    width: 100%
 }
 
 .message-input-container button {
