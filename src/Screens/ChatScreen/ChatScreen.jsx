@@ -47,9 +47,9 @@ const ChatScreen = () => {
 
 	return (
 		<div className='chat-screen-container'>
-			<div className='contact-info-container'>
+			<div className='messages-header-container'>
 				<Link to="/">
-					<ICONS.Arrowleft/>
+					<ICONS.Arrowleft />
 				</Link>
 				<div className='avatar-container'>
 					<img className='avatar' src={contact_selected.avatar} alt={contact_selected.name} />
@@ -66,11 +66,15 @@ const ChatScreen = () => {
 
 				</div>
 			</div>
-			<h1>Mensajes:</h1>
-		
 
-			<MessagesList messages={messages} deleteMessageById={deleteMessageById} />
-			<NewMessageForm addNewMessage={addNewMessage} />
+			<div className='messages-body-container'>
+				<MessagesList messages={messages} deleteMessageById={deleteMessageById} />
+				<div className='new-message-form-container'>
+				<NewMessageForm addNewMessage={addNewMessage} />
+				</div>
+				<img className='whatsapp-doodle-pattern' src='/images/whatsapp-doodle-pattern.jpg' alt="whatsapp-doodle-pattern" />
+				
+			</div>
 		</div>
 	)
 }

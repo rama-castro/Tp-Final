@@ -12,7 +12,17 @@ const contacts = [
             { emisor: 'YO', hora: '23:12', id: 3, texto: 'Todo esta bien?', status: 'visto' },
             { emisor: 'OTRO', hora: '23:13', id: 4, texto: 'Todo en orden, ¿y tú?', status: 'visto' },
             { emisor: 'YO', hora: '23:14', id: 5, texto: 'Igual, solo descansando', status: 'visto' },
-            { emisor: 'OTRO', hora: '23:15', id: 6, texto: '¡Qué bueno, disfruta!', status: 'visto' }
+            { emisor: 'OTRO', hora: '23:15', id: 6, texto: '¡Qué bueno, disfruta!', status: 'visto' },
+            { emisor: 'YO', hora: '23:16', id: 7, texto: 'Estás libre mañana?', status: 'visto' },
+            { emisor: 'OTRO', hora: '23:17', id: 8, texto: 'Sí, después de las 5.', status: 'visto' },
+            { emisor: 'YO', hora: '23:18', id: 9, texto: 'Perfecto, ¿tomamos algo?', status: 'visto' },
+            { emisor: 'OTRO', hora: '23:19', id: 10, texto: 'Dale, suena bien.', status: 'visto' },
+            { emisor: 'YO', hora: '23:20', id: 11, texto: 'Te paso dirección más tarde.', status: 'visto' },
+            { emisor: 'OTRO', hora: '23:21', id: 12, texto: 'Listo, te espero.', status: 'visto' },
+            { emisor: 'YO', hora: '23:22', id: 13, texto: '¿Cómo estuvo tu día?', status: 'visto' },
+            { emisor: 'OTRO', hora: '23:23', id: 14, texto: 'Tranquilo, mucho trabajo.', status: 'visto' },
+            { emisor: 'YO', hora: '23:24', id: 15, texto: 'Bueno, ya casi es viernes.', status: 'visto' },
+            { emisor: 'OTRO', hora: '23:25', id: 16, texto: '¡Menos mal! Lo necesito.', status: 'visto' },
         ]
     },
     {

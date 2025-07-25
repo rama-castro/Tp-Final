@@ -1,5 +1,6 @@
 .contacts-container{
-    gap: 10px
+    gap: 10px;
+    overflow-y: auto;
 }
 
 .contact-item-container {

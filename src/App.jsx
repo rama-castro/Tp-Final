@@ -5,6 +5,7 @@ import ContactScreen from './Screens/ContactScreen/ContactScreen'
 import Sidebar from './Components/Sidebar/Sidebar'
 import SplashScreen from './Components/SplashScreen/SplashScreen'
 import SearchBar from './Components/SearchBar/SearchBar'
+import FavoritesScreen from './Screens/FavoritesScreen/FavoritesScreen'
 
 const App = () => {
 
@@ -19,6 +20,7 @@ const App = () => {
       <Routes>
         < Route path='/' element= {< SplashScreen />}/>
         < Route path='/contact/:contact_id/messages' element= {< ChatScreen />}/>
+        < Route path='/favorites' element= {< FavoritesScreen />}/>
       </Routes>
 
     </div>
