@@ -19,3 +19,16 @@
     gap: 5px;
 
 }
+
+.sidebar-icon{
+    font-size: 22px;
+    color: #00000099;
+}
+
+.sidebar-icon:hover{
+    font-size: 22px;
+    color: #00000099;
+    background-color: #eae9e7;
+    border-radius: 50%;
+    padding: 5px;
+}
