@@ -1,7 +1,7 @@
 .chat-screen-container {
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 65%;
     height: 100vh;
 
 }
@@ -19,31 +19,44 @@
     z-index: 1;
 }
 
+
+
+
 .messages-body-container {
-    display: flex; 
+    display: flex;
     flex-direction: column;
     position: relative;
     height: 100%;
-    width: 100%;
     overflow-y: auto;
+    margin-bottom: 70px;
 }
 
-.whatsapp-doodle-pattern {
-    display: flex;
-    height: auto;
-    position: absolute;
-    width: 60%;
-    top: 0;
-    left: 0;
-    z-index: -1;
+.messages-body-container::-webkit-scrollbar {
+    width: 8px;
+}
+
+
+.messages-body-container::-webkit-scrollbar-thumb {
+    background-color: #cecece;
+    border-radius: 8px;
+    border: 2px solid transparent;
+    background-clip: content-box;
     opacity: 0.5;
+}
+
+
+.whatsapp-doodle-pattern {
+    z-index: -1;
+    position: fixed;
+    width:65%;
 
 }
 
 .new-message-form-container {
     display: flex;
+    width: 65%;
     position: fixed;
     bottom: 0;
     padding: 10px 20px;
-    z-index: 10;
+    z-index: 2;
 }

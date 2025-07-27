@@ -3,24 +3,24 @@
     overflow-y: auto;
 }
 
+.contact-item-container:hover{
+    background-color: #f6f5f4;
+    border-radius: 10px;
+}
+
 .contact-item-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 10px;
     position: relative;
-    width: 450px;
     margin: 0px 10px;
     padding-right: 30px;
 
 }
-.contact-item-container:hover{
-    background-color: #f6f5f4;
-    border-radius: 10px;
-}
 
 .avatar-container {
-    margin-right: 20px;
+    margin-right: 10px;
 }
 
 .avatar {

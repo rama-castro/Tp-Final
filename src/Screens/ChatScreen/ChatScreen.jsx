@@ -49,11 +49,9 @@ const ChatScreen = () => {
 		<div className='chat-screen-container'>
 			<div className='messages-header-container'>
 				<Link to="/">
-					<ICONS.Arrowleft />
+					<ICONS.Arrowleft style={{marginRight: '10px'}}/>
 				</Link>
-				<div className='avatar-container'>
 					<img className='avatar' src={contact_selected.avatar} alt={contact_selected.name} />
-				</div>
 				<div className='contact-name-container'>
 					<h2>{contact_selected.name}</h2>
 					<span className='contact-last-connection'> {contact_selected.lastConnection}</span>
@@ -68,13 +66,12 @@ const ChatScreen = () => {
 			</div>
 
 			<div className='messages-body-container'>
-				<MessagesList messages={messages} deleteMessageById={deleteMessageById} />
+				<MessagesList className='messages-list-container' messages={messages} deleteMessageById={deleteMessageById} />
 				<div className='new-message-form-container'>
-				<NewMessageForm addNewMessage={addNewMessage} />
+					<NewMessageForm addNewMessage={addNewMessage} />
 				</div>
-				<img className='whatsapp-doodle-pattern' src='/images/whatsapp-doodle-pattern.jpg' alt="whatsapp-doodle-pattern" />
-				
 			</div>
+			<img className='whatsapp-doodle-pattern' src="/images/whatsapp-doodle-pattern.jpg" alt="whatsapp-doodle-pattern" />
 		</div>
 	)
 }

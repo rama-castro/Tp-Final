@@ -1,12 +1,26 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+.contacts-container {
+  width: 30%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
 }
 
-.chat-page-container{
-    display: flex;
-    height: 100vh;
+.contacts-list-scrollable {
+  overflow-y: auto;
+}
 
+.contacts-list-scrollable::-webkit-scrollbar {
+  width: 8px;}
+
+  
+.contacts-list-scrollable::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+
+.contacts-list-scrollable::-webkit-scrollbar-thumb {
+  background-color: #cecece; 
+  border-radius: 8px;
+  border: 2px solid transparent;
+  background-clip: content-box;
 }

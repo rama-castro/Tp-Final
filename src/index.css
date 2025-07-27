@@ -1,11 +1,10 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css");
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    font-family: "DM Sans", sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-decoration: none;
 }
 
@@ -17,22 +16,22 @@
     cursor: pointer;
     font-size: 14px;
     color: #00000099;
-    font-weight: 100;
+    font-weight: 400;
 }
 .primary-button:hover{
         background-color: #f6f5f4;
 
 }
 .primary-button-selected{
-    background-color: #d9fdd3 ;
+    background-color: #d9fdd3   
 }
 h2{
     font-size: 16px;
     color: #0a0a0a;
-    font-weight: 500;   
+    font-weight: 400;   
 }
 span{
     font-size: 14px;
     color: #00000099;
-    font-weight: 200;
+    font-weight: 400;
 }

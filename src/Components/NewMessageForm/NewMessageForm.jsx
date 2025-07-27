@@ -14,17 +14,15 @@ const NewMessageForm = ({ addNewMessage }) => {
 
 
     return (
-        <form onSubmit={handleSubmitSendMessageForm}>
-            <div className='message-input-container'>
-                <input type="text" placeholder='Escribe un mensaje...' id='message' name='message' required value={messageInput} onChange={(e) => setMessageInput(e.target.value)} />
-                <button type='submit'>
-                    {messageInput.trim() ? (
-                        <ICONS.Send className='send-icon' />
-                    ) : (
-                        <ICONS.Mic className='mic-icon' />
-                    )}
-                </button>
-            </div>
+        <form className='message-input-container' onSubmit={handleSubmitSendMessageForm}>
+            <input type="text" placeholder='Escribe un mensaje...' id='message' name='message' required value={messageInput} onChange={(e) => setMessageInput(e.target.value)} />
+            <button type='submit'>
+                {messageInput.trim() ? (
+                    <ICONS.Send className='send-icon' />
+                ) : (
+                    <ICONS.Mic className='mic-icon' />
+                )}
+            </button>
         </form>
     )
 }
