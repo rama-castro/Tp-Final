@@ -22,8 +22,14 @@
         background-color: #f6f5f4;
 
 }
-.primary-button-selected{
+.primary-button.active{
     background-color: #d9fdd3   
+}
+
+h1{
+    font-size: 24px;
+    color: #0a0a0a;
+    font-weight: 700;   
 }
 h2{
     font-size: 16px;

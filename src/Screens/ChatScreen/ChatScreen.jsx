@@ -49,19 +49,17 @@ const ChatScreen = () => {
 		<div className='chat-screen-container'>
 			<div className='messages-header-container'>
 				<Link to="/">
-					<ICONS.Arrowleft style={{marginRight: '10px'}}/>
+					<ICONS.Arrowleft style={{ marginRight: '10px' }} />
 				</Link>
-					<img className='avatar' src={contact_selected.avatar} alt={contact_selected.name} />
-				<div className='contact-name-container'>
+				<img className='avatar' src={contact_selected.avatar} alt={contact_selected.name} />
+				<div className='contact-info-container'>
 					<h2>{contact_selected.name}</h2>
 					<span className='contact-last-connection'> {contact_selected.lastConnection}</span>
 				</div>
-				<div className='contact-icons-container'>
+				<div className='chat-screen-contact-icons'>
 					<i class="bi bi-chat-left-dots-fill"></i>
 					<i class="bi bi-chat-left-dots-fill"></i>
 					<i class="bi bi-chat-left-dots-fill"></i>
-
-
 				</div>
 			</div>
 
