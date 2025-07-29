@@ -20,6 +20,7 @@
     border: none;
     padding: 10px 20px;
     outline: none;
+    width: 100%;
 }
 
 .message-input-container button {
@@ -35,15 +36,46 @@
     justify-content: center;
 }
 
+.message-input-container button:hover .mic-icon {
+    background-color: #008069;
+    color: #ffffff;
+    border-radius: 50%;
+    
+}
+
 .mic-icon {
     color: black;
     font-size: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: all;
 }
 
+.mic-icon :hover {
+    color: #ffffff;
+}
 
 .message-input-container button:hover
 {    background-color: #008069;
+}
+
+.message-input-container button:hover .send-icon {
+    background-color: #008069;
+    color: #ffffff;
+    border-radius: 20%;
+    
+}
+
+.send-icon {
+    color: black;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all;
+}
+
+.send-icon :hover {
+    color: #ffffff;
 }

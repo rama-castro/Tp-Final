@@ -1,0 +1,30 @@
+.chat-background{
+    background-size: cover;
+    background-position: center;
+    height: 100dvh;
+    width: 65%; 
+    overflow: hidden;
+    background-color: #f6f5f4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    gap: 20px;
+}
+
+.status-screen-container{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 60%;
+}
+
+
+.status-screen-footer-container{
+    display: flex;
+    align-items: center;
+    margin: 30px;
+    margin-top: auto;}

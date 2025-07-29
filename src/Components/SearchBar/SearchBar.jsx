@@ -21,10 +21,10 @@ const SearchBar = ({Screens, SetScreens}) =>
                     </div>
 
                 </div>
-                <search className='search-bar_box'>
-                    <i class="bi bi-search"></i>
-                    <input className="search-input" placeholder="Buscar un chat o iniciar uno nuevo." />
-                </search>
+                    <search className='search-bar_box'>
+                        <i class="bi bi-search"></i>
+                        <input className="search-input" placeholder="Buscar un chat o iniciar uno nuevo." />
+                    </search>
                 <div className='search-bar_bottom'>
                     <button className={`primary-button ${isActive('Todos')}`} onClick={() => SetScreens('Todos')}>Todos</button>
                     <button className={`primary-button ${isActive('No Leídos')}`}  onClick={() => SetScreens('No Leídos')}>No Leídos</button>

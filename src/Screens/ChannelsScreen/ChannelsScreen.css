@@ -12,24 +12,24 @@
     gap: 20px;
 }
 
-.splash-screen-container{
+.channels-screen-container{
     display: flex;
     flex: 1;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 20px;
-    width: 60%;
+    width: 55%;
 }
 
-.splash-screen-title{
+.channels-screen-title{
     font-size: 36px;
     font-weight: 200;
     color: #000000;
     text-align: center;
 }
 
-.splash-screen-footer-container{
+.channels-screen-footer-container{
     display: flex;
     align-items: center;
     margin: 30px;

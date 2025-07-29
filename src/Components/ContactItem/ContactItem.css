@@ -35,21 +35,11 @@
     display: flex;
     flex-direction: column;
     overflow: hidden;
-    gap: 5px}
-
-.contact-name-container{
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
-
-.contact-name-container {
+    gap: 5px;
     color: #777;
-    font-size: 14px;
     white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
+    text-overflow: ellipsis;}
+
 
 .contact-last-connection {
     font-size: 12px;
