@@ -20,7 +20,7 @@ const Message = ({ emisor, hora, id, texto, status, deleteMessageById }) => {
 			<div className={Message({ emisor })} >
 				<p>{texto}</p>
 				<div className='last-connection-container'>
-					<span style={{fontSize: '11px'}} >{hora}</span>
+					<span className='span' style={{fontSize: '11px'}} >{hora}</span>
 					<ICONS.Doublecheckmark style={{color: '#888', fontSize: '16px'}}/>
 				</div>
 				

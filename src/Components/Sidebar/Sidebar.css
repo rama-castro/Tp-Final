@@ -1,22 +1,25 @@
-a, a:visited, a:active {
+a,
+a:visited,
+a:active {
     color: inherit;
     text-decoration: none;
 }
 
 
 
-.sidebar{
+.sidebar {
     display: flex;
     flex-direction: column;
     height: 100dvh;
-    width: 4%;
+    width: 50px;
     background-color: #f5f5f5;
     padding: 10px;
     justify-content: space-between;
-    align-items: center;   
+    align-items: center;
 }
 
-.top-sidebar-icons, .bottom-sidebar-icons{
+.top-sidebar-icons,
+.bottom-sidebar-icons {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -25,29 +28,79 @@ a, a:visited, a:active {
 
 }
 
-.sidebar-icon{
-    width: 28px;
-    height: 28px;
-    padding: 5px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #5e6a70;
-    transition: all 0.2s ease-in-out;
-    overflow: visible;
-}
-
-.sidebar-icon:hover {
-    background-color: #e1e1e1;
-    cursor: pointer;
-    box-shadow: 0 0 0 4px #e1e1e1;
-
-}
 
 .nav-link-active .sidebar-icon,
 .sidebar-icon.active {
     background-color: #eae9e7;
     box-shadow: 0 0 0 4px #e1e1e1;
     color: rgb(37, 37, 37);
+}
+
+
+.sidebar-avatar {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.tooltip {
+    position: absolute;
+    left: 60px;
+    background-color: black;
+    color: white;
+    padding: 4px 12px;
+    border-radius: 20px;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+    font-size: 14px;
+    z-index: 1;
+}
+
+.tooltip-chat {
+    top: 18px;
+}
+
+.tooltip-status {
+    top: 64px;
+}
+
+.tooltip-channels {
+    top: 105px;
+}
+
+.tooltip-communities {
+    top: 145px
+}
+
+.tooltip-settings {
+    bottom: 64px;
+}
+
+.tooltip-profile {
+    bottom: 18px;
+}
+
+.sidebar-item:hover .tooltip {
+    opacity: 1;
+}
+
+@media (width <=500px) {
+    .sidebar {
+        flex-direction: row;
+        height: 50px;
+        width: 100%;
+        padding: 20px;
+    }
+
+    .top-sidebar-icons,
+    .bottom-sidebar-icons {
+        flex-direction: row;
+        gap: 15px;
+        margin: 0;
+    }
+
+    .tooltip {
+        display: none;
+    }
 }

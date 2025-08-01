@@ -21,7 +21,17 @@ const contacts = [
             { emisor: "OTRO", hora: "23:21", id: 112, texto: "Dale, te espero", status: "visto" },
             { emisor: "YO", hora: "23:22", id: 113, texto: "¿Llevás algo para picar?", status: "visto" },
             { emisor: "OTRO", hora: "23:23", id: 114, texto: "Sí, unas facturas", status: "visto" },
-            { emisor: "YO", hora: "23:24", id: 115, texto: "Buenísimo", status: "visto" }
+            { emisor: "YO", hora: "23:24", id: 115, texto: "Buenísimo", status: "visto" },
+            { emisor: "OTRO", hora: "23:25", id: 116, texto: "¿Querés que lleve mate también?", status: "visto" },
+            { emisor: "YO", hora: "23:26", id: 117, texto: "Sí, dale, así tomamos algo mientras charlamos", status: "visto" },
+            { emisor: "OTRO", hora: "23:27", id: 118, texto: "Perfecto, lo armo antes de salir", status: "visto" },
+            { emisor: "YO", hora: "23:28", id: 119, texto: "¿Te busco a las 4:30 entonces?", status: "visto" },
+            { emisor: "OTRO", hora: "23:29", id: 120, texto: "Sí, justo, así llegamos tranquilos", status: "visto" },
+            { emisor: "YO", hora: "23:30", id: 121, texto: "¿Llevo pelota o ya hay allá?", status: "visto" },
+            { emisor: "OTRO", hora: "23:31", id: 122, texto: "Traé igual por las dudas", status: "visto" },
+            { emisor: "YO", hora: "23:32", id: 123, texto: "Dale, la meto en el baúl", status: "visto" },
+            { emisor: "OTRO", hora: "23:33", id: 124, texto: "Listo, nos vemos mañana entonces", status: "visto" },
+            { emisor: "YO", hora: "23:34", id: 125, texto: "Nos vemos, que descanses!", status: "visto" }
         ]
     },
     {

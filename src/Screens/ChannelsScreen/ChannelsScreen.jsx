@@ -8,7 +8,7 @@ export const ChannelsScreen = () => {
             <div className='channels-screen-container'>
                 <ICONS.ChannelsFill style={{fontSize:'60px', color:'#c6c4c2'}}/>
                 <h1 className='splash-screen-title'>Descubre canales.</h1>
-                <span style={{ textAlign: 'center' }}>Entretenimiento, deportes, noticias, estilo de vida, personas y mucho más. Sigue los canales que te interesan.</span>
+                <span className='span' style={{ textAlign: 'center' }}>Entretenimiento, deportes, noticias, estilo de vida, personas y mucho más. Sigue los canales que te interesan.</span>
             </div>
             <div style={{visibility: 'hidden'}} className='channels-screen-footer-container'>
                 <ICONS.Lock className='lock-icon' style={{color:'#5e6a70', margin:'5px', fontSize:'18px'}} />

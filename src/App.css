@@ -1,3 +1,11 @@
+.app-container {
+  width: 100dvw;
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: row;
+}
+
+
 .contacts-container {
   width: 30%;
   height: 100dvh;
@@ -6,21 +14,62 @@
   overflow: hidden;
 }
 
+.contacts-container-mobile-ui {
+  width: 100%;
+  height: 100dvh;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.screen-container {
+  flex: 1;
+  height: 100dvh;
+  
+}
+
 .contacts-list-scrollable {
   overflow-y: auto;
 }
 
 .contacts-list-scrollable::-webkit-scrollbar {
-  width: 8px;}
+  width: 8px;
+}
 
-  
+
 .contacts-list-scrollable::-webkit-scrollbar-track {
-  background: #f1f1f1; 
+  background: #f1f1f1;
 }
 
 .contacts-list-scrollable::-webkit-scrollbar-thumb {
-  background-color: #cecece; 
+  background-color: #cecece;
   border-radius: 8px;
   border: 2px solid transparent;
   background-clip: content-box;
+}
+
+
+@media (width <=800px) and (width >=501px) {
+  .screen-container {
+    display: flex;
+    width: 100dvw;
+    height: 100dvh;
+  }
+}
+
+@media (width <=500px) {
+  .app-container {
+    width: 100dvw;
+    height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden  ;
+  }
+
+  .screen-container {
+    width: 100dvw;
+    height: 100dvh;
+  }
+
 }

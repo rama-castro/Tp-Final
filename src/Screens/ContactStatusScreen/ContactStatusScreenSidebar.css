@@ -1,0 +1,38 @@
+.status-sidebar-screen-container{
+    display: flex;
+    flex-direction: column;
+    padding:20px;
+    flex: 1;
+}
+.status-user-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    position: relative;
+    margin: 20px 10px;
+    padding-right: 30px;
+    border-bottom: #dddcdb solid 1px;
+
+}
+
+.status-header-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.blank-content-container{
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.blank-content-text{
+    display: flex;
+    text-align: center;
+    font-size: 18px;
+    color: #737372;
+}

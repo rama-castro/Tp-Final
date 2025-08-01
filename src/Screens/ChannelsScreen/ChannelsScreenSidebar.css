@@ -1,0 +1,22 @@
+.channels-sidebar-screen-container{
+    display: flex;
+    flex-direction: column;
+    padding:20px;
+    flex: 1;
+}
+
+.channels-header-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.channels-text-container{
+    margin: 30px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 0px;
+}

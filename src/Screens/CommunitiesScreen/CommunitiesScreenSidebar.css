@@ -1,0 +1,25 @@
+.communities-sidebar-screen-container{
+    display: flex;
+    flex-direction: column;
+    padding:20px;
+    flex: 1;
+}
+
+.communities-header-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.communities-text-container{
+    margin: 80px 10px 10px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 10px 0px;
+}
+
+.communities-image{
+width: 40%;}

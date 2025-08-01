@@ -9,63 +9,81 @@ const Sidebar = () => {
     return (
         <div className='sidebar'>
             <div className='top-sidebar-icons'>
-                <NavLink to="/" className={({ isActive }) => isActive ? 'nav-link-active' : undefined}>
 
-                    {({ isActive }) =>
-                        isActive ? (
-                            <ICONS.ChatFill className="sidebar-icon chat-icon" />
-                        ) : (
-                            <ICONS.Chat className="sidebar-icon chat-icon" />
-                        )
-                    }
-                </NavLink>
+                <div className="sidebar-item">
+                    <NavLink to="/" className={({ isActive }) => isActive ? 'nav-link-active' : undefined}>
+                        {({ isActive }) =>
+                            isActive ? <ICONS.ChatFill className="sidebar-icon icon" /> :
+                                <ICONS.Chat className="sidebar-icon icon" />
+                        }
+                    </NavLink>
+                    <button className="tooltip tooltip-chat">Chats</button>
+                </div>
 
-                <NavLink to="/status" className={({ isActive }) => isActive ? 'nav-link-active' : undefined}>
+                <div className="sidebar-item">
+                    <NavLink to="/status" className={({ isActive }) => isActive ? 'nav-link-active' : undefined}>
 
-                    {({ isActive }) =>
-                        isActive ? (
-                            <ICONS.StatusFill className="sidebar-icon star-icon" />
-                        ) : (
-                            <ICONS.Status className="sidebar-icon star-icon" />
-                        )
-                    }
-                </NavLink>
+                        {({ isActive }) =>
+                            isActive ? (
+                                <ICONS.StatusFill className="sidebar-icon icon" />
+                            ) : (
+                                <ICONS.Status className="sidebar-icon icon" />
+                            )
+                        }
+                    </NavLink>
+                    <button className="tooltip tooltip-status">Estados</button>
+                </div>
 
-                <NavLink to="/channels" className={({ isActive }) => isActive ? 'nav-link-active' : undefined}>
+                <div className="sidebar-item">
+                    <NavLink to="/channels" className={({ isActive }) => isActive ? 'nav-link-active' : undefined}>
 
-                    {({ isActive }) =>
-                        isActive ? (
-                            <ICONS.ChannelsFill className="sidebar-icon star-icon" />
-                        ) : (
-                            <ICONS.Channels className="sidebar-icon star-icon" />
-                        )
-                    }
-                </NavLink>
+                        {({ isActive }) =>
+                            isActive ? (
+                                <ICONS.ChannelsFill className="sidebar-icon icon" />
+                            ) : (
+                                <ICONS.Channels className="sidebar-icon icon" />
+                            )
+                        }
+                    </NavLink>
+                    <button className="tooltip tooltip-channels">Canales</button>
+                </div>
 
-                <NavLink to="/communities" className={({ isActive }) => isActive ? 'nav-link-active' : undefined}>
+                <div className="sidebar-item">
+                    <NavLink to="/communities" className={({ isActive }) => isActive ? 'nav-link-active' : undefined}>
 
-                    {({ isActive }) =>
-                        isActive ? (
-                            <ICONS.CommunitiesFill className="sidebar-icon star-icon" />
-                        ) : (
-                            <ICONS.Communities className="sidebar-icon star-icon" />
-                        )
-                    }
-                </NavLink>
+                        {({ isActive }) =>
+                            isActive ? (
+                                <ICONS.CommunitiesFill className="sidebar-icon icon" />
+                            ) : (
+                                <ICONS.Communities className="sidebar-icon icon" />
+                            )
+                        }
+                    </NavLink>
+                    <button className="tooltip tooltip-communities">Comunidades</button>
+
+                </div>
 
             </div>
             <div className='bottom-sidebar-icons'>
-                <NavLink to="/settings" className={({ isActive }) => isActive ? 'nav-link-active' : undefined}>
 
-                    {({ isActive }) =>
-                        isActive ? (
-                            <ICONS.SettingsFill className="sidebar-icon star-icon" />
-                        ) : (
-                            <ICONS.Settings className="sidebar-icon star-icon" />
-                        )
-                    }
-                </NavLink>
-                <i class="bi bi-chat-left-dots-fill"></i>
+                <div className="sidebar-item">
+                    <NavLink to="/settings" className={({ isActive }) => isActive ? 'nav-link-active' : undefined}>
+
+                        {({ isActive }) =>
+                            isActive ? (
+                                <ICONS.SettingsFill className="sidebar-icon icon" />
+                            ) : (
+                                <ICONS.Settings className="sidebar-icon icon" />
+                            )
+                        }
+                    </NavLink>
+                    <button className="tooltip tooltip-settings">Ajustes</button>
+
+                </div>
+                <div className="sidebar-item">
+                    <img className='sidebar-avatar' src='https://randomuser.me/api/portraits/men/17.jpg' alt='user.avatar' />
+                    <button className="tooltip tooltip-profile">Perfil</button>
+                </div>
             </div>
 
         </div>

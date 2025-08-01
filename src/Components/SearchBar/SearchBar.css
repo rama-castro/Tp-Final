@@ -10,13 +10,6 @@
     height: 20px;
 }
 
-.search-bar_top-icons {
-    display: flex;
-    flex-direction: row;
-    gap: 15px;
-    width: fit-content;
-}
-
 .search-bar_box {
     display: flex;
     flex-direction: row;
@@ -45,4 +38,5 @@
     align-items: center;
     padding: 0px 20px 10px;
     gap: 5px;
+    flex-wrap: wrap;
 }

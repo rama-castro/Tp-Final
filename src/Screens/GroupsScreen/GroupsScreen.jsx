@@ -5,7 +5,7 @@ import { Link } from 'react-router'
 const GroupsScreen = () => {
     return (
         <div className='unread-msgs-screen'>
-            <span>No tienes grupos creados .</span>
+            <span  className='span'>No tienes grupos creados .</span>
             <Link to="/"><span to="/" style={{ color: '#1b8755' }}>Ver todos los chats.</span></Link>
         </div>
     )

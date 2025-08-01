@@ -5,6 +5,7 @@ import { getContactById } from '../../services/contactService'
 import { NewMessageForm } from '../../Components/NewMessageForm/NewMessageForm'
 import './ChatScreen.css'
 import ICONS from '../../assets/constants/icons/icons'
+import { MdHeight } from 'react-icons/md'
 
 const ChatScreen = () => {
 	const { contact_id } = useParams()
@@ -54,7 +55,7 @@ const ChatScreen = () => {
 				<img className='avatar' src={contact_selected.avatar} alt={contact_selected.name} />
 				<div className='contact-info-container'>
 					<h2>{contact_selected.name}</h2>
-					<span className='contact-last-connection'> {contact_selected.lastConnection}</span>
+					<span className='span contact-last-connection'> {contact_selected.lastConnection}</span>
 				</div>
 				<div className='chat-screen-contact-icons'>
 					<i class="bi bi-chat-left-dots-fill"></i>
@@ -65,9 +66,9 @@ const ChatScreen = () => {
 
 			<div className='messages-body-container'>
 				<MessagesList className='messages-list-container' messages={messages} deleteMessageById={deleteMessageById} />
-				<div className='new-message-form-container'>
-					<NewMessageForm addNewMessage={addNewMessage} />
-				</div>
+			</div>
+			<div className='new-message-form-container'>
+				<NewMessageForm addNewMessage={addNewMessage} />
 			</div>
 			<img className='whatsapp-doodle-pattern' src="/images/whatsapp-doodle-pattern.jpg" alt="whatsapp-doodle-pattern" />
 		</div>
