@@ -81,8 +81,10 @@ const Sidebar = () => {
 
                 </div>
                 <div className="sidebar-item">
-                    <img className='sidebar-avatar' src='https://randomuser.me/api/portraits/men/17.jpg' alt='user.avatar' />
+                    <NavLink to='profile'>
+                    <img className='sidebar-avatar' src='./images/user-avatar.jpg' alt='user.avatar' />
                     <button className="tooltip tooltip-profile">Perfil</button>
+                    </NavLink>
                 </div>
             </div>
 

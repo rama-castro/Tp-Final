@@ -11,7 +11,7 @@ a:active {
     display: flex;
     flex-direction: column;
     height: 100dvh;
-    width: 50px;
+    width: 60px;
     background-color: #f5f5f5;
     padding: 10px;
     justify-content: space-between;
@@ -51,10 +51,10 @@ a:active {
     color: white;
     padding: 4px 12px;
     border-radius: 20px;
-    opacity: 0;
     transition: opacity 0.2s ease;
     font-size: 14px;
     z-index: 1;
+    display: none;
 }
 
 .tooltip-chat {
@@ -82,7 +82,7 @@ a:active {
 }
 
 .sidebar-item:hover .tooltip {
-    opacity: 1;
+    display: flex;
 }
 
 @media (width <=500px) {
@@ -100,7 +100,8 @@ a:active {
         margin: 0;
     }
 
-    .tooltip {
+
+    .sidebar-item:hover .tooltip {
         display: none;
     }
 }

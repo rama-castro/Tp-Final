@@ -15,6 +15,8 @@ import ContactStatusScreenSidebar from './Screens/ContactStatusScreen/ContactSta
 import ChannelsScreenSidebar from './Screens/ChannelsScreen/ChannelsScreenSidebar'
 import CommunitiesScreenSidebar from './Screens/CommunitiesScreen/CommunitiesScreenSidebar'
 import mediaQueriesHook from './assets/constants/mediaQueriesHook/mediaQueriesHook'
+import ProfileScreenSidebar from './Screens/ProfileScreen/ProfileScreenSidebar'
+import ProfileScreen from './Screens/ProfileScreen/ProfileScreen'
 const App = () => {
   const [Screens, SetScreens] = useState('Todos')
 
@@ -61,10 +63,11 @@ const App = () => {
                   </>
                 }
               />
-              <Route path="/settings" element={<SettingsScreenSidebar />} />
               <Route path="/status" element={<ContactStatusScreenSidebar />} />
               <Route path="/channels" element={<ChannelsScreenSidebar />} />
               <Route path="/communities" element={<CommunitiesScreenSidebar />} />
+              <Route path="/settings" element={<SettingsScreenSidebar />} />
+              <Route path="/profile" element={<ProfileScreenSidebar />} />
             </Routes>
           </div>
           {isMobile && (
@@ -90,6 +93,7 @@ const App = () => {
             <Route path="/channels" element={<ChannelsScreen />} />
             <Route path="/communities" element={<CommunitiesScreen />} />
             <Route path="/settings" element={<SettingsScreen />} />
+            <Route path="/profile" element={<ProfileScreen />} />
           </Routes>
 
         </div>

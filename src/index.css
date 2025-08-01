@@ -66,8 +66,8 @@ h2{
 
 .icon{
     color: #666565;
-    width: 28px;
-    height: 28px;
+        font-size: 28px;
+
     padding: 3px;
     border-radius: 50%;
     display: flex;
@@ -77,8 +77,18 @@ h2{
     overflow: visible;
 }
 
+.icon-no-hover{
+    color: #666565;
+    font-size: 28px;
+    padding: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease-in-out;
+    overflow: visible;
+}
 .icon-dark{
-        color: #020202;
+    color: #020202;
 
 }
 .icon:hover {

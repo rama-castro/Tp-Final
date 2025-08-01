@@ -21,7 +21,7 @@ const SearchBar = ({ Screens, SetScreens }) => {
 
             </div>
             <search className='search-bar_box'>
-                <i class="bi bi-search"></i>
+                <ICONS.Search  style={{ fontSize: '20px' }} className='icon-no-hover'/>
                 <input className="search-input" placeholder="Buscar un chat o iniciar uno nuevo." />
             </search>
             <div className='search-bar_bottom'>

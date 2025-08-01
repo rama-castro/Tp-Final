@@ -49,18 +49,23 @@ const ChatScreen = () => {
 	return (
 		<div className='chat-screen-container'>
 			<div className='messages-header-container'>
-				<Link to="/">
-					<ICONS.Arrowleft style={{ marginRight: '10px' }} />
-				</Link>
-				<img className='avatar' src={contact_selected.avatar} alt={contact_selected.name} />
-				<div className='contact-info-container'>
-					<h2>{contact_selected.name}</h2>
-					<span className='span contact-last-connection'> {contact_selected.lastConnection}</span>
+				<div className='messages-header-user-container'>
+					<Link to="/">
+						<ICONS.Arrowleft style={{ marginRight: '10px' }} />
+					</Link>
+					<img className='avatar' src={contact_selected.avatar} alt={contact_selected.name} />
+					<div className='contact-info-container'>
+						<h2>{contact_selected.name}</h2>
+						<span className='span contact-last-connection'> {contact_selected.lastConnection}</span>
+					</div>
 				</div>
 				<div className='chat-screen-contact-icons'>
-					<i class="bi bi-chat-left-dots-fill"></i>
-					<i class="bi bi-chat-left-dots-fill"></i>
-					<i class="bi bi-chat-left-dots-fill"></i>
+					<div className='chat-screen-camera-icon'>
+						<ICONS.Camera className='icon-no-hover icon-dark '/>
+						<ICONS.DownArrow className='icon-no-hover icon-dark '/>
+					</div>
+					<ICONS.Search className='icon icon-dark' />
+					<ICONS.DotsMenu className='icon icon-dark' />
 				</div>
 			</div>
 

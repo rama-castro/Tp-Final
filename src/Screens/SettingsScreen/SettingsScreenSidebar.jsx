@@ -13,10 +13,10 @@ const SettingsScreenSidebar = () => {
             </search>
             <div className='settings-user-container'>
                 <div className='avatar-container'>
-                    <img className='avatar' src='https://randomuser.me/api/portraits/men/17.jpg' alt='user.avatar' />
+                    <img className='avatar' src='./images/user-avatar.jpg' alt='user.avatar' />
                 </div>
                 <div className='contact-name-container'>
-                    <h2>Nombrerto Apellídez</h2>
+                    <h2>Johann Sebastian Mastropiero</h2>
                     <span className='span'> ¡Hola! Estoy usando WhatsApp.</span>
                 </div>
             </div>
