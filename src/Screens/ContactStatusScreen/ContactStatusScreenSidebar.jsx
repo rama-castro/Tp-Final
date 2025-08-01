@@ -14,7 +14,7 @@ const ContactStatusScreenSidebar = () => {
             </div>
             <div className='status-user-container'>
                 <div className='avatar-container'>
-                    <img className='avatar' src='https://randomuser.me/api/portraits/men/17.jpg' alt='user.avatar' />
+                    <img className='avatar' src='./images/user-avatar.jpg' alt='user.avatar' />
                 </div>
                 <div className='contact-name-container'>
                     <h2>Mi estado</h2>
